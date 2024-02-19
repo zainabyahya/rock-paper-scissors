@@ -34,7 +34,7 @@ function determineWinner(userChoice, computerChoice) {
 }
 
 function startGame() {
-    let userInput = prompt("Choose one of the following: rock, paper, scissors.").toLowerCase();
+    let userInput = prompt("Choose one of the following: rock, paper, scissors.").toLowerCase().trim();
     let options = ["rock", "paper", "scissors"];
     let computerChoice = options[Math.floor(Math.random() * 3)];
     console.log(`Computer chose ${computerChoice}`);
